@@ -69,6 +69,7 @@ else
         $PULSAR_TERM sh -c "$PULSAR_CMD" &> /dev/null &
 
     elif [ "$PULSAR_PAUSE" = "true" ]; then
-        $PULSAR_TERM sh -c "$PULSAR_CMD; read -p ':' PROMPT" &> /dev/null &
+        $PULSAR_TERM sh -c "echo '$ ' $PULSAR_CMD; \
+                                      $PULSAR_CMD; read -p ':' PROMPT" &> /dev/null &
     fi
 fi
