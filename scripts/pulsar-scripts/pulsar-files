@@ -79,7 +79,7 @@ fi
 if [ -z "$PULSAR_OPENER" ]; then
     PULSAR_OPENER="$( echo $PULSAR_OPENERS \
                            $PULSAR_GLOBAL_OPENERS | $PULSAR_PROMPT \
-                                                    $PULSAR_OPENER_PROMPT_OPTS)"
+                                                    $PULSAR_OPENER_PROMPT_OPTS )"
     [ -z "$PULSAR_OPENER" ] && exit 1
 fi
 
