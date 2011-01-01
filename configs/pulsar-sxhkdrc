@@ -10,4 +10,3 @@ super + alt + {a, d, n, i, s, v, w}
 
 super + alt + {m, q, k, o}
     pulsar-{manpages,websearch,keybindings,notes}
-

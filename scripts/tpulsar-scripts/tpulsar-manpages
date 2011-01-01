@@ -1,0 +1,11 @@
+#! /bin/sh
+
+# ███╗   ███╗ █████╗ ███╗   ██╗
+# ████╗ ████║██╔══██╗████╗  ██║
+# ██╔████╔██║███████║██╔██╗ ██║
+# ██║╚██╔╝██║██╔══██║██║╚██╗██║
+# ██║ ╚═╝ ██║██║  ██║██║ ╚████║
+# ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝
+
+pulsar-manpages -c ~/.config/pulsar/tpulsar-configs/tpulsar.conf \
+                -c ~/.config/pulsar/tpulsar-configs/tpulsar-manpages.conf

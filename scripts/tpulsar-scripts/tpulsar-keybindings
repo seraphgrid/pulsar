@@ -1,0 +1,11 @@
+#! /bin/sh
+
+# ██╗  ██╗███████╗██╗   ██╗███████╗
+# ██║ ██╔╝██╔════╝╚██╗ ██╔╝██╔════╝
+# █████╔╝ █████╗   ╚████╔╝ ███████╗
+# ██╔═██╗ ██╔══╝    ╚██╔╝  ╚════██║
+# ██║  ██╗███████╗   ██║   ███████║
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚══════╝
+
+pulsar-keybindings -c ~/.config/pulsar/tpulsar-configs/tpulsar.conf \
+                   -c ~/.config/pulsar/tpulsar-configs/tpulsar-keybindings.conf $@
