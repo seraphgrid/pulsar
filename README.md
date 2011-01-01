@@ -30,14 +30,43 @@ I am born dyslexic and mentally ill, it took a lot of effort to make this projec
 
 # Installation
 
-- Copy the configs for scripts to .config folder `cp -r configs $HOME/.config/pulsar`
-- Link all pulsar scripts to path using command `sudo ln -sr scripts/pulsar-scripts/pulsar-* /usr/local/bin/`
-- Link all tpulsar scripts to path using command `sudo ln -sr scripts/tpulsar-scripts/tpulsar-* /usr/local/bin/`
-- Link `xclip-file-copy` script (used in `pulsar-notes`) to path using command `sudo ln -sr scripts/xclip-file-copy /usr/local/bin/`
-- Link `xdotool-type-file` script (used in `pulsar-notes`) to path using command `sudo ln -sr scripts/xdotool-type-file /usr/local/bin/`
-- Link `xclip-copy` script (used in global openers) to path using command `sudo ln -sr scripts/xclip-copy /usr/local/bin/`
-- After installation, start sxhkd using command `sxhkd -c your_existing_sxhkdrc -c $HOME/.config/pulsar/pulsar-sxhkdrc`
-- Customize the config files according to your needs (important!)
+Copy the configs for scripts to .config folder.
+
+```bash
+cp -r configs $HOME/.config/pulsar
+```
+
+Link all pulsar scripts to path using command.
+```bash
+sudo ln -sr scripts/pulsar-scripts/pulsar-* /usr/local/bin/
+```
+
+Link all tpulsar scripts to path using command
+```bash
+sudo ln -sr scripts/tpulsar-scripts/tpulsar-* /usr/local/bin/
+```
+
+Link `xclip-file-copy` script (used in `pulsar-notes`) to path using command.
+```bash
+sudo ln -sr scripts/xclip-file-copy /usr/local/bin/
+```
+
+Link `xdotool-type-file` script (used in `pulsar-notes`) to path using command.
+```bash
+sudo ln -sr scripts/xdotool-type-file /usr/local/bin/
+```
+
+Link `xclip-copy` script (used in global openers) to path using command.
+```bash
+sudo ln -sr scripts/xclip-copy /usr/local/bin/
+```
+
+After installation, start sxhkd using command.
+```bash
+sxhkd -c your_existing_sxhkdrc -c $HOME/.config/pulsar/pulsar-sxhkdrc
+```
+
+**Customize the config files according to your needs (important!)**
 
 # Requirements
 
