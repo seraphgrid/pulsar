@@ -5,23 +5,23 @@
 # ██║ ╚═╝ ██║██║  ██║██║  ██╗███████╗
 # ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
 
-.PHONY: install-configs install-scripts uninstall-configs uninstall-scripts help
+.PHONY: install-configs install-scripts uninstall-configs uninstall-scripts help test-pulsar-scripts test-tpulsar-scripts
 
-#  ___ ___  _    ___  ___  ___
-# / __/ _ \| |  / _ \| _ \/ __|
-#| (_| (_) | |_| (_) |   /\__ \
-# \___\___/|____\___/|_|_\|___/
-#
+#   ___ ___  _    ___  ___  ___
+#  / __/ _ \| |  / _ \| _ \/ __|
+#|  (_| (_) | |_| (_) |   /\__ \
+#  \___\___/|____\___/|_|_\|___/
+# 
 
 RESET := $(shell tput sgr0)
 RED := $(shell tput setaf 1)
 GREEN := $(shell tput setaf 2)
 YELLOW := $(shell tput setaf 3)
 
-# _  _ ___ _    ___
-#| || | __| |  | _ \
-#| __ | _|| |__|  _/
-#|_||_|___|____|_|
+#  _  _ ___ _    ___
+# | || | __| |  | _ \
+# | __ | _|| |__|  _/
+# |_||_|___|____|_|
 #
 
 help:
@@ -31,6 +31,8 @@ help:
 	@echo "${YELLOW}make install-configs${RESET} - Install the configs."
 	@echo "${YELLOW}make uninstall-scripts${RESET} - Uninstall the scripts."
 	@echo "${YELLOW}make uninstall-configs${RESET} - Uninstall the configs."
+	@echo "${YELLOW}make test-pulsar-scripts${RESET} - Test the pulsar scripts."
+	@echo "${YELLOW}make test-tpulsar-scripts${RESET} - Test the tpulsar scripts."
 
 # ___     ___ ___  _  _ ___ ___ ___ ___
 #|_ _|__ / __/ _ \| \| | __|_ _/ __/ __|
@@ -84,3 +86,52 @@ uninstall-scripts:
 
 	@echo "\n${RED}REMOVING TPULSAR SCRIPTS: ${RESET}"
 	rm -I /usr/local/bin/tpulsar-*
+
+#   _____ ___ ___ _____    ___ _   _ _    ___   _   ___ 
+#  |_   _| __/ __|_   _|__| _ \ | | | |  / __| /_\ | _ \
+#    | | | _|\__ \ | ||___|  _/ |_| | |__\__ \/ _ \|   /
+#    |_| |___|___/ |_|    |_|  \___/|____|___/_/ \_\_|_\
+
+test-pulsar-scripts:
+	pulsar-applications 
+	pulsar-documents 
+	pulsar-files 
+	pulsar-keybindings 
+	pulsar-list 
+	pulsar-manpages 
+	pulsar-music 
+	pulsar-notes 
+	pulsar-pictures 
+	pulsar-projects 
+	pulsar-sources 
+	pulsar-termrun 
+	pulsar-videos 
+	pulsar-wallpapers 
+	pulsar-webbookmarks 
+	pulsar-websearch 
+	pulsar-xresources
+
+#   _____ ___ ___ _____   _____ ___ _   _ _    ___   _   ___ 
+#  |_   _| __/ __|_   _|_|_   _| _ \ | | | |  / __| /_\ | _ \
+#    | | | _|\__ \ | ||___|| | |  _/ |_| | |__\__ \/ _ \|   /
+#    |_| |___|___/ |_|     |_| |_|  \___/|____|___/_/ \_\_|_\
+#
+
+test-tpulsar-scripts:
+	tpulsar-applications 
+	tpulsar-documents 
+	tpulsar-files 
+	tpulsar-keybindings 
+	tpulsar-list 
+	tpulsar-manpages 
+	tpulsar-music 
+	tpulsar-notes 
+	tpulsar-pictures 
+	tpulsar-projects 
+	tpulsar-sources 
+	tpulsar-termrun 
+	tpulsar-videos 
+	tpulsar-wallpapers 
+	tpulsar-webbookmarks 
+	tpulsar-websearch 
+	tpulsar-xresources
