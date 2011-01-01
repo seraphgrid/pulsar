@@ -8,5 +8,5 @@
 super + alt + {a, d, n, i, s, v, w}
     pulsar-{applications,documents,music,pictures,sources,videos,wallpapers}
 
-super + alt + {m, q, k, o}
-    pulsar-{manpages,websearch,keybindings,notes}
+super + alt + {m, q, k, o, x}
+    pulsar-{manpages,websearch,keybindings,notes,xresources}
