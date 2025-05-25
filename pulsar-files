@@ -1,0 +1,78 @@
+#! /bin/sh
+
+# ██████╗ ██╗   ██╗██╗     ███████╗ █████╗ ██████╗ 
+# ██╔══██╗██║   ██║██║     ██╔════╝██╔══██╗██╔══██╗
+# ██████╔╝██║   ██║██║     ███████╗███████║██████╔╝
+# ██╔═══╝ ██║   ██║██║     ╚════██║██╔══██║██╔══██╗
+# ██║     ╚██████╔╝███████╗███████║██║  ██║██║  ██║
+# ╚═╝      ╚═════╝ ╚══════╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝
+
+# Exit the script on error
+set -e
+
+# Function to show logo
+pulsar_show_logo() {
+    tput setaf 4
+    echo "                                     "
+    echo " ███████╗██╗██╗     ███████╗███████╗ "
+    echo " ██╔════╝██║██║     ██╔════╝██╔════╝ "
+    echo " █████╗  ██║██║     █████╗  ███████╗  PULSAR-FILES "
+    echo " ██╔══╝  ██║██║     ██╔══╝  ╚════██║ "
+    echo " ██║     ██║███████╗███████╗███████║ "
+    echo " ╚═╝     ╚═╝╚══════╝╚══════╝╚══════╝ "
+    echo "                                     "
+    tput sgr0
+}
+
+# Function to show help
+pulsar_show_help() {
+
+    # Show to colored help
+    RESET="$(tput sgr0)"
+    RED="$(tput bold && tput setaf 1)"
+    echo "${RED}pulsar-files:${RESET} [-c, --config config_file]\n"
+
+    # Exit after showing help
+    exit 1
+}
+
+# Show the long at start
+pulsar_show_logo
+
+# Show help if no comment
+[ $# -eq 0 ] && pulsar_show_help
+
+# Parse the user arguments
+while [ $# -gt 0 ]; do
+
+    case $1 in
+        -c|--config) shift && . "$1";;
+        *) pulsar_show_help;;
+    esac
+
+    shift
+done
+
+# Change the current directory
+cd "$PULSAR_DIR"
+
+# Show the prompt for files
+PULSAR_FILE="$( find . $PULSAR_FIND_OPTS | \
+                       sed 's/.\///' | \
+                       $PULSAR_PROMPT $PULSAR_PROMPT_OPTS )"
+
+[ -z "$PULSAR_FILE" ] && exit 1
+
+# Show the prompt for opener
+if [ -z "$PULSAR_OPENER" ]; then
+    PULSAR_OPENER="$( echo $PULSAR_OPENERS $PULSAR_GLOBAL_OPENERS | $PULSAR_PROMPT \
+                                                                    $PULSAR_PROMPT_OPENER_OPTS)"
+    [ -z "$PULSAR_OPENER" ] && exit 1
+fi
+
+# Run file using opener
+if [ -z "$PULSAR_DETCH" ]; then
+    $PULSAR_OPENER "$PULSAR_FILE"
+else
+    $PULSAR_OPENER "$PULSAR_FILE" &
+fi
