@@ -24,8 +24,20 @@ Please contribute to this project, it can't be done without your help.
 - Scirpts that start's with `t` can be opened using terminal.
 - All of the scripts can be configured through config files in `configs`.
 
+# Installation
+
+- Copy the configs for scripts to .config folder `cp -r configs $HOME/.config/pulsar`
+- Link all pulsar scripts to path using command `sudo ln -sr pulsar-* /usr/local/bin/`
+- Link all tpulsar scripts to path using command `sudo ln -sr tpulsar-* /usr/local/bin/`
+
+# Requirements
+
+- `fzf` for tpulsar scripts (can be changed in `tpulsar.conf`).
+- `dmenu` for pulsar scripts (can be changed in `pulsar.conf`).
+
 # Todos
 
+- Sxhkd keybindings.
 - Font icons support.
 - Option to disable hidden files.
 - Script to list and open manpages.
