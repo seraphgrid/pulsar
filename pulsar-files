@@ -36,9 +36,6 @@ pulsar_show_help() {
     exit 1
 }
 
-# Show the long at start
-pulsar_show_logo
-
 # Show help if no comment
 [ $# -eq 0 ] && pulsar_show_help
 
