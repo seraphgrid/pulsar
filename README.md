@@ -46,5 +46,5 @@ Please contribute to this project, it can't be done without your help.
 - [X] Option to disable hidden files.
 - [X] Script to list and open manpages.
 - [ ] Script to that holds list of keybindings.
-- [ ] Script to search using specific search engine.
-- [ ] Script that takes file with list and open's the specific list item.
+- [X] Script to search using specific search engine.
+- [X] Script that takes file with list and open's the specific list item.
