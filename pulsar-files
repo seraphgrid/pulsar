@@ -32,8 +32,8 @@ pulsar_show_help() {
 
     # Show to colored help
     RESET="$(tput sgr0)"
-    RED="$(tput bold && tput setaf 4)"
-    echo "${RED}pulsar-files:${RESET} [-c, --config config_file]\n"
+    BLUE="$(tput bold && tput setaf 4)"
+    echo "${BLUE}pulsar-files:${RESET} [-c, --config config_file]\n"
 
     # Exit after showing help
     exit 1
