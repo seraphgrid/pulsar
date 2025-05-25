@@ -39,6 +39,11 @@ Please contribute to this project, it can't be done without your help.
 - `fzf` for tpulsar scripts (can be changed in `tpulsar.conf`).
 - `dmenu` for pulsar scripts (can be changed in `pulsar.conf`).
 
+# Development
+
+- Editor should be vscode (word-wrap disabled).
+- Recommended vscode extension is `ANSI Decorator`.
+
 # Todos
 
 - [X] Sxhkd keybindings.
