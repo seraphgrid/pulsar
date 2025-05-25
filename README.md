@@ -41,15 +41,18 @@ Please contribute to this project, it can't be done without your help.
 
 # Development
 
-- Editor should be vscode (word-wrap disabled).
+- Editor should be vscode (word-wrap disabled and tab -> 4 spaces).
 - Recommended vscode extension is `ANSI Decorator`.
 
 # Todos
 
 - [X] Sxhkd keybindings.
 - [ ] Font icons support.
+- [ ] Prompt to open web bookmarks.
 - [X] Option to disable hidden files.
 - [X] Script to list and open manpages.
 - [ ] Script to that holds list of keybindings.
+- [ ] Prompt that lists the installed packages.
 - [X] Script to search using specific search engine.
+- [ ] Menu that holds commonly used commands (`shutdown`, `reboot`)
 - [X] Script that takes file with list and open's the specific list item.
