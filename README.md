@@ -14,6 +14,8 @@
 | pulsar-wallpapers   | Set or view wallpaper quickly. |
 | pulsar-xresources   | Parse the selected xresources file (can be usefull when changing theme of awesomewm, terminal or others). |
 | pulsar-manpages     | View manpages without using terminal |
+| pulsar-list         | Helper script to make other script work (like pulsar-files) |
+| pulsar-websearch    | Search using selected search engine url |
 
 # Support.
 

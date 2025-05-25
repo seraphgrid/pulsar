@@ -1,0 +1,74 @@
+#! /bin/sh
+
+# ██████╗ ██╗   ██╗██╗     ███████╗ █████╗ ██████╗ 
+# ██╔══██╗██║   ██║██║     ██╔════╝██╔══██╗██╔══██╗
+# ██████╔╝██║   ██║██║     ███████╗███████║██████╔╝
+# ██╔═══╝ ██║   ██║██║     ╚════██║██╔══██║██╔══██╗
+# ██║     ╚██████╔╝███████╗███████║██║  ██║██║  ██║
+# ╚═╝      ╚═════╝ ╚══════╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝
+
+# Exit the script on error
+set -e
+
+# Function to show logo
+pulsar_show_logo() {
+    tput setaf 4
+    echo "                              "
+    echo " ██╗     ██╗███████╗████████╗ "
+    echo " ██║     ██║██╔════╝╚══██╔══╝ "
+    echo " ██║     ██║███████╗   ██║    "
+    echo " ██║     ██║╚════██║   ██║    "
+    echo " ███████╗██║███████║   ██║    "
+    echo " ╚══════╝╚═╝╚══════╝   ╚═╝    "
+    echo "                              "
+    tput sgr0
+}
+
+# Function to show help
+pulsar_show_help() {
+
+    # Show the logo in help
+    pulsar_show_logo
+
+    # Show to colored help
+    RESET="$(tput sgr0)"
+    BLUE="$(tput bold && tput setaf 4)"
+    echo "${BLUE}pulsar-list:${RESET} [-c, --config config_file]\n"
+
+    # Exit after showing help
+    exit 1
+}
+
+# Show help if no comment
+[ $# -eq 0 ] && pulsar_show_help
+
+# Parse the user arguments
+while [ $# -gt 0 ]; do
+
+    case $1 in
+        -c|--config) shift && . "$1";;
+        *) pulsar_show_help;;
+    esac
+
+    shift
+done
+
+PULSAR_ITEM="$( $PULSAR_PROMPT \
+                $PULSAR_PROMPT_OPTS < "$PULSAR_LIST"  )"
+
+[ -z "$PULSAR_ITEM" ] && exit 1
+
+# Show the prompt for opener
+if [ -z "$PULSAR_OPENER" ]; then
+    PULSAR_OPENER="$( echo $PULSAR_OPENERS \
+                           $PULSAR_GLOBAL_OPENERS | $PULSAR_PROMPT \
+                                                    $PULSAR_PROMPT_OPENER_OPTS)"
+    [ -z "$PULSAR_OPENER" ] && exit 1
+fi
+
+# Run file using opener
+if [ -z "$PULSAR_DETCH" ]; then
+    $PULSAR_OPENER "$PULSAR_ITEM"
+else
+    $PULSAR_OPENER "$PULSAR_ITEM" &> /dev/null &
+fi
