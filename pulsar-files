@@ -56,14 +56,16 @@ done
 # Change the current directory
 cd "$PULSAR_DIR"
 
-# Show the prompt for files (show-hidden)
 if [ "$PULSAR_SHOW_HIDDEN" = "true" ]; then
+
+    # Show the prompt for files (show-hidden)
     PULSAR_FILE="$( find . $PULSAR_FIND_OPTS | \
                            sed 's/.\///' | \
                            $PULSAR_PROMPT $PULSAR_PROMPT_OPTS )"
 
-# Show the prompt for files (hide-hidden)
 elif [ "$PULSAR_SHOW_HIDDEN" = "false" ]; then
+
+    # Show the prompt for files (hide-hidden)
     PULSAR_FILE="$( find -not -path '*/.*' $PULSAR_FIND_OPTS | \
                                            sed 's/.\///' | \
                                            $PULSAR_PROMPT $PULSAR_PROMPT_OPTS )"
