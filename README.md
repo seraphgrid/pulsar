@@ -41,7 +41,7 @@ Please contribute to this project, it can't be done without your help.
 
 - [X] Sxhkd keybindings.
 - [ ] Font icons support.
-- [ ] Option to disable hidden files.
+- [X] Option to disable hidden files.
 - [X] Script to list and open manpages.
 - [ ] Script to that holds list of keybindings.
 - [ ] Script to search using specific search engine.
