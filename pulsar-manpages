@@ -1,0 +1,80 @@
+#! /bin/sh
+
+# ██████╗ ██╗   ██╗██╗     ███████╗ █████╗ ██████╗ 
+# ██╔══██╗██║   ██║██║     ██╔════╝██╔══██╗██╔══██╗
+# ██████╔╝██║   ██║██║     ███████╗███████║██████╔╝
+# ██╔═══╝ ██║   ██║██║     ╚════██║██╔══██║██╔══██╗
+# ██║     ╚██████╔╝███████╗███████║██║  ██║██║  ██║
+# ╚═╝      ╚═════╝ ╚══════╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝
+
+# Exit the script on error
+set -e
+
+# Function to show logo
+pulsar_show_logo() {
+    tput setaf 4
+    echo "                             "
+    echo "███╗   ███╗ █████╗ ███╗   ██╗"
+    echo "████╗ ████║██╔══██╗████╗  ██║"
+    echo "██╔████╔██║███████║██╔██╗ ██║  PULSAR-MANPAGES"
+    echo "██║╚██╔╝██║██╔══██║██║╚██╗██║"
+    echo "██║ ╚═╝ ██║██║  ██║██║ ╚████║"
+    echo "╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝"
+    echo "                             "
+    tput sgr0
+}
+
+# Function to show help
+pulsar_show_help() {
+
+    # Show the logo in help
+    pulsar_show_logo
+
+    # Show to colored help
+    RESET="$(tput sgr0)"
+    BLUE="$(tput bold && tput setaf 4)"
+    echo "${BLUE}pulsar-manpages:${RESET} [-c, --config config_file]\n"
+
+    # Exit after showing help
+    exit 1
+}
+
+# Load the default configs for script
+. "$HOME/.config/pulsar/pulsar.conf"
+. "$HOME/.config/pulsar/pulsar-manpages.conf"
+
+# Parse the user arguments
+while [ $# -gt 0 ]; do
+
+    case $1 in
+        -c|--config) shift && . "$1";;
+        -s|--simple) PULSAR_VIEW="simple";;
+        -d|--detailed) PULSAR_VIEW="detailed";;
+        *) pulsar_show_help;;
+    esac
+
+    shift
+done
+
+# Show the prompt for files
+if [ "$PULSAR_VIEW" = "detailed" ]; then
+    PULSAR_MANPAGE="$( apropos . $PULSAR_APROPOS_OPTS | $PULSAR_PROMPT $PULSAR_PROMPT_OPTS \
+                                                      | tr -d '()' \
+                                                      | awk -F" " '{print $2" "$1}' )"
+
+elif [ "$PULSAR_VIEW" = "simple" ]; then
+    PULSAR_MANPAGE="$( apropos . $PULSAR_APROPOS_OPTS | awk -F" " '{print $1" "$2}' \
+                                                      | $PULSAR_PROMPT $PULSAR_PROMPT_OPTS \
+                                                      | tr -d '()' \
+                                                      | awk -F" " '{print $2" "$1}' )"
+fi
+
+[ -z "$PULSAR_MANPAGE" ] && exit 1
+
+# Run file using opener
+if [ -z "$PULSAR_DETCH" ]; then
+    $PULSAR_MANPAGER $PULSAR_MANPAGE
+else
+    $PULSAR_TERM sh -c "$PULSAR_MANPAGER \
+                        $PULSAR_MANPAGE" &> /dev/null &
+fi

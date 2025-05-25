@@ -12,7 +12,8 @@
 | pulsar-sources      | Open your sources for different outside projects (cloned from git, etc). |
 | pulsar-videos       | Open your videos with speed of the antimatter ship. |
 | pulsar-wallpapers   | Set or view wallpaper quickly. |
-| pulsar-xresources   | Parse the selected xresources file (can be usefull when changing theme of awesomewm, terminal or others. |
+| pulsar-xresources   | Parse the selected xresources file (can be usefull when changing theme of awesomewm, terminal or others). |
+| pulsar-manpages     | View manpages without using terminal |
 
 # Support.
 
@@ -41,7 +42,7 @@ Please contribute to this project, it can't be done without your help.
 - [X] Sxhkd keybindings.
 - [ ] Font icons support.
 - [ ] Option to disable hidden files.
-- [ ] Script to list and open manpages.
+- [X] Script to list and open manpages.
 - [ ] Script to that holds list of keybindings.
 - [ ] Script to search using specific search engine.
 - [ ] Script that takes file with list and open's the specific list item.
