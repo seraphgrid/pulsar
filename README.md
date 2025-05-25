@@ -29,6 +29,7 @@ Please contribute to this project, it can't be done without your help.
 - Copy the configs for scripts to .config folder `cp -r configs $HOME/.config/pulsar`
 - Link all pulsar scripts to path using command `sudo ln -sr pulsar-* /usr/local/bin/`
 - Link all tpulsar scripts to path using command `sudo ln -sr tpulsar-* /usr/local/bin/`
+- After installation, start sxhkd using command `sxhkd -c your_existing_sxhkdrc $HOME/.config/pulsar/pulsar-sxhkdrc`
 
 # Requirements
 
@@ -37,7 +38,7 @@ Please contribute to this project, it can't be done without your help.
 
 # Todos
 
-- [ ] Sxhkd keybindings.
+- [X] Sxhkd keybindings.
 - [ ] Font icons support.
 - [ ] Option to disable hidden files.
 - [ ] Script to list and open manpages.
