@@ -7,3 +7,6 @@
 
 super + alt + {a, d, n, i, s, v, w}
     pulsar-{applications,documents,music,pictures,sources,videos,wallpapers}
+
+super + alt + m
+    pulsar-manpages

@@ -7,4 +7,5 @@
 # ██║ ╚═╝ ██║██║  ██║██║ ╚████║
 # ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝
 
-pulsar-manpages -c ~/.config/pulsar/tpulsar.conf
+pulsar-manpages -c ~/.config/pulsar/tpulsar.conf \
+                -c ~/.config/pulsar/tpulsar-manpages.conf
