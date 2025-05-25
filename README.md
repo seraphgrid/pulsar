@@ -1,4 +1,4 @@
-# pulsar
+# Pulsar
 🚀 PULSAR - Scripts To Open Files, Manpages And More.
 
 | SCRIPT             | DESCRIPTION                   |
@@ -14,7 +14,11 @@
 | dmenu-wallpapers   | Set or view wallpaper quickly. |
 | dmenu-xresources   | Parse the selected xresources file (can be usefull when changing theme of awesomewm, terminal or others. |
 
-# A lot of effort was put into this project, please donate and credit me.
+# Support.
+
+I am born dyslexic and mentally ill, it took a lot of effort to make this project.  
+Please donate me at: [https://www.paypal.me/alexthegreat600]  
+Please contribute to this project, it can't be done without your help.
 
 - The future changes can break your config.
 - Scirpts that start's with `t` can be opened using terminal.
