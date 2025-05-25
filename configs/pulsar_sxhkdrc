@@ -6,4 +6,4 @@
 # ╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝ 
 
 super + alt + {a, d, n, i, s, v, w}
-    pulsar-{applications, documents, music, pictures, sources, videos, wallpapers}
+    pulsar-{applications,documents,music,pictures,sources,videos,wallpapers}
