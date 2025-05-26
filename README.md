@@ -17,6 +17,7 @@
 | pulsar-list         | Helper script to make other script work (like pulsar-files) |
 | pulsar-websearch    | Search using selected search engine url |
 | pulsar-keybindings  | Quickly see keybindings for apps. |
+| pulsar-webbookmarks | Open the selected in you favourite browser. |
 
 # Support.
 
