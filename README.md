@@ -18,6 +18,7 @@
 | pulsar-websearch    | Search using selected search engine url. |
 | pulsar-keybindings  | Quickly see keybindings for apps. |
 | pulsar-webbookmarks | Open the selected in you favourite browser. |
+| pulsar-notes        | Copy or edit text content of the selected note. (usefull for snippets and templates) |
 
 # Support.
 
@@ -34,6 +35,7 @@ Please contribute to this project, it can't be done without your help.
 - Copy the configs for scripts to .config folder `cp -r configs $HOME/.config/pulsar`
 - Link all pulsar scripts to path using command `sudo ln -sr pulsar-* /usr/local/bin/`
 - Link all tpulsar scripts to path using command `sudo ln -sr tpulsar-* /usr/local/bin/`
+- Link `xclip-file-copy` script (used in `pulsar-notes`) to path using command `sudo ln -sr xclip-file-copy /usr/local/bin/`
 - After installation, start sxhkd using command `sxhkd -c your_existing_sxhkdrc $HOME/.config/pulsar/pulsar-sxhkdrc`
 - Customize the config files according to your needs (important!)
 
@@ -52,10 +54,11 @@ Please contribute to this project, it can't be done without your help.
 
 - [X] Sxhkd keybindings.
 - [ ] Font icons support.
+- [X] Prompt to show the notes.
 - [X] Prompt to open web bookmarks.
 - [X] Option to disable hidden files.
 - [X] Script to list and open manpages.
-- [ ] Prompt to show templates of code.
+- [X] Prompt to show templates of code.
 - [X] Script to that holds list of keybindings.
 - [ ] Prompt that lists the installed packages.
 - [X] Script to search using specific search engine.
