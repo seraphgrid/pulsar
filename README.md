@@ -13,9 +13,9 @@
 | pulsar-videos       | Open your videos with speed of the antimatter ship. |
 | pulsar-wallpapers   | Set or view wallpaper quickly. |
 | pulsar-xresources   | Parse the selected xresources file (can be usefull when changing theme of awesomewm, terminal or others). |
-| pulsar-manpages     | View manpages without using terminal |
-| pulsar-list         | Helper script to make other script work (like pulsar-files) |
-| pulsar-websearch    | Search using selected search engine url |
+| pulsar-manpages     | View manpages without using terminal. |
+| pulsar-list         | Helper script to make other script work (like pulsar-files). |
+| pulsar-websearch    | Search using selected search engine url. |
 | pulsar-keybindings  | Quickly see keybindings for apps. |
 | pulsar-webbookmarks | Open the selected in you favourite browser. |
 
