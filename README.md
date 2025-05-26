@@ -36,7 +36,7 @@ Please contribute to this project, it can't be done without your help.
 - Link all pulsar scripts to path using command `sudo ln -sr pulsar-* /usr/local/bin/`
 - Link all tpulsar scripts to path using command `sudo ln -sr tpulsar-* /usr/local/bin/`
 - Link `xclip-file-copy` script (used in `pulsar-notes`) to path using command `sudo ln -sr xclip-file-copy /usr/local/bin/`
-- After installation, start sxhkd using command `sxhkd -c your_existing_sxhkdrc $HOME/.config/pulsar/pulsar-sxhkdrc`
+- After installation, start sxhkd using command `sxhkd -c your_existing_sxhkdrc -c $HOME/.config/pulsar/pulsar-sxhkdrc`
 - Customize the config files according to your needs (important!)
 
 # Requirements
