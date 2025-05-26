@@ -1,1 +1,1 @@
-[ alt+shift+p ] vscode: opens the vscode.
+VSCode: [ alt+shift+p ] opens the vscode.
