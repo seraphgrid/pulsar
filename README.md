@@ -52,7 +52,7 @@ Please contribute to this project, it can't be done without your help.
 
 - [X] Sxhkd keybindings.
 - [ ] Font icons support.
-- [ ] Prompt to open web bookmarks.
+- [X] Prompt to open web bookmarks.
 - [X] Option to disable hidden files.
 - [X] Script to list and open manpages.
 - [ ] Prompt to show templates of code.
