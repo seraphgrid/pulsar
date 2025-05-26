@@ -36,6 +36,7 @@ Please contribute to this project, it can't be done without your help.
 - Link all pulsar scripts to path using command `sudo ln -sr pulsar-* /usr/local/bin/`
 - Link all tpulsar scripts to path using command `sudo ln -sr tpulsar-* /usr/local/bin/`
 - Link `xclip-file-copy` script (used in `pulsar-notes`) to path using command `sudo ln -sr xclip-file-copy /usr/local/bin/`
+- Link `xdotool-type-file` script (used in `pulsar-notes`) to path using command `sudo ln -sr xdotool-type-file /usr/local/bin/`
 - After installation, start sxhkd using command `sxhkd -c your_existing_sxhkdrc -c $HOME/.config/pulsar/pulsar-sxhkdrc`
 - Customize the config files according to your needs (important!)
 
@@ -43,6 +44,8 @@ Please contribute to this project, it can't be done without your help.
 
 - `fzf` for tpulsar scripts (can be changed in `tpulsar.conf`).
 - `dmenu` for pulsar scripts (can be changed in `pulsar.conf`).
+- `xclip` for `xclip-file-copy` script (optional).
+- `xdotool` for `xdotool-type-file` script (optional).
 
 # Development
 
@@ -56,7 +59,8 @@ Please contribute to this project, it can't be done without your help.
 - [ ] Font icons support.
 - [X] Prompt to show the notes.
 - [X] Prompt to open web bookmarks.
-- [X] Option to disable hidden files.
+- [X] Option to disable hidden files.  
+
 - [X] Script to list and open manpages.
 - [X] Prompt to show templates of code.
 - [X] Script to that holds list of keybindings.
