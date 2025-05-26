@@ -46,7 +46,7 @@ Please contribute to this project, it can't be done without your help.
 
 - Editor should be vscode (word-wrap disabled and tab -> 4 spaces).
 - Recommended vscode extension is `ANSI Decorator`.
-- If you have dyslexia then font `Cascadia Code` and high contrast dark theme will help.
+- If you have dyslexia then font `Cascadia Code` and high contrast dark theme will help (Github-Dark-Default is nice).
 
 # Todos
 
