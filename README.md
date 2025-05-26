@@ -16,6 +16,7 @@
 | pulsar-manpages     | View manpages without using terminal |
 | pulsar-list         | Helper script to make other script work (like pulsar-files) |
 | pulsar-websearch    | Search using selected search engine url |
+| pulsar-keybindings  | Quickly see keybindings for apps. |
 
 # Support.
 
@@ -53,7 +54,7 @@ Please contribute to this project, it can't be done without your help.
 - [ ] Prompt to open web bookmarks.
 - [X] Option to disable hidden files.
 - [X] Script to list and open manpages.
-- [ ] Script to that holds list of keybindings.
+- [X] Script to that holds list of keybindings.
 - [ ] Prompt that lists the installed packages.
 - [X] Script to search using specific search engine.
 - [ ] Menu that holds commonly used commands (`shutdown`, `reboot`)
