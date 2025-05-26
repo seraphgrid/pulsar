@@ -37,6 +37,7 @@ Please contribute to this project, it can't be done without your help.
 - Link all tpulsar scripts to path using command `sudo ln -sr tpulsar-* /usr/local/bin/`
 - Link `xclip-file-copy` script (used in `pulsar-notes`) to path using command `sudo ln -sr xclip-file-copy /usr/local/bin/`
 - Link `xdotool-type-file` script (used in `pulsar-notes`) to path using command `sudo ln -sr xdotool-type-file /usr/local/bin/`
+- Link `xclip-copy` script (used in global openers) to path using command `sudo ln -sr xclip-copy /usr/local/bin/`
 - After installation, start sxhkd using command `sxhkd -c your_existing_sxhkdrc -c $HOME/.config/pulsar/pulsar-sxhkdrc`
 - Customize the config files according to your needs (important!)
 
