@@ -59,11 +59,11 @@ Please contribute to this project, it can't be done without your help.
 - [ ] Font icons support.
 - [X] Prompt to show the notes.
 - [X] Prompt to open web bookmarks.
-- [X] Option to disable hidden files.  
-
+- [X] Option to disable hidden files.
 - [X] Script to list and open manpages.
 - [X] Prompt to show templates of code.
 - [X] Script to that holds list of keybindings.
+- [ ] Script to randomly select from directory.
 - [ ] Prompt that lists the installed packages.
 - [X] Script to search using specific search engine.
 - [ ] Menu that holds commonly used commands (`shutdown`, `reboot`).
