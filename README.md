@@ -23,8 +23,6 @@
 # Support.
 
 I am born dyslexic and mentally ill, it took a lot of effort to make this project.  
-Please donate me at: [https://www.paypal.me/alexthegreat600]  
-Please contribute to this project, it can't be done without your help.
 
 - The future changes can break your config.
 - Scirpts that start's with `t` can be opened using terminal.
@@ -54,18 +52,21 @@ Please contribute to this project, it can't be done without your help.
 - Recommended vscode extension is `ANSI Decorator`.
 - If you have dyslexia then font `Cascadia Code` and high contrast dark theme will help (Github-Dark-Default is nice).
 
-# Todos
+# Todos (complete)
 
 - [X] Sxhkd keybindings.
-- [ ] Font icons support.
 - [X] Prompt to show the notes.
 - [X] Prompt to open web bookmarks.
-- [X] Option to disable hidden files.  
-
+- [X] Option to disable hidden files.
 - [X] Script to list and open manpages.
 - [X] Prompt to show templates of code.
 - [X] Script to that holds list of keybindings.
-- [ ] Prompt that lists the installed packages.
 - [X] Script to search using specific search engine.
-- [ ] Menu that holds commonly used commands (`shutdown`, `reboot`).
 - [X] Script that takes file with list and open's the specific list item.
+
+# Todos (incomplete)
+
+- [ ] Font icons support.
+- [ ] Script to randomly select from directory.
+- [ ] Prompt that lists the installed packages.
+- [ ] Menu that holds commonly used commands (`shutdown`, `reboot`).
