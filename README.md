@@ -23,8 +23,6 @@
 # Support.
 
 I am born dyslexic and mentally ill, it took a lot of effort to make this project.  
-Please donate me at: [https://www.paypal.me/alexthegreat600]  
-Please contribute to this project, it can't be done without your help.
 
 - The future changes can break your config.
 - Scirpts that start's with `t` can be opened using terminal.
