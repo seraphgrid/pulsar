@@ -82,7 +82,7 @@ fi
 
 # Run file using opener
 if [ -z "$PULSAR_DETCH" ]; then
-    $PULSAR_OPENER "$PULSAR_FILE"
+    $PULSAR_OPENER "${PULSAR_DIR}/$PULSAR_FILE"
 else
-    $PULSAR_OPENER "${PULSAR_DIR}$PULSAR_FILE" &> /dev/null &
+    $PULSAR_OPENER "${PULSAR_DIR}/$PULSAR_FILE" &> /dev/null &
 fi
