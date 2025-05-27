@@ -1,6 +1,8 @@
 # Pulsar
 🚀 PULSAR - Scripts To Open Files, Manpages And More.
 
+file:///home/alex/Videos/desktop-2025-05-27_08.24.05.mp4
+
 | SCRIPT              | DESCRIPTION                   |
 | ------------------- | ----------------------------- |
 | pulsar-files        | Script is customisible through config files (most script are created using this). |
