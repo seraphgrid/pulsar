@@ -40,8 +40,8 @@ pulsar_show_help() {
 }
 
 # Load the default configs for script
-. "$HOME/.config/pulsar/pulsar.conf"
-. "$HOME/.config/pulsar/pulsar-manpages.conf"
+. "$HOME/.config/pulsar/pulsar-configs/pulsar.conf"
+. "$HOME/.config/pulsar/pulsar-configs/pulsar-manpages.conf"
 
 # Parse the user arguments
 while [ $# -gt 0 ]; do
