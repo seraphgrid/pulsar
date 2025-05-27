@@ -1,7 +1,11 @@
 # Pulsar
 🚀 PULSAR - Scripts To Open Files, Manpages And More.
 
-file:///home/alex/Videos/desktop-2025-05-27_08.24.05.mp4
+
+
+https://github.com/user-attachments/assets/bf330a6d-5ab9-46c6-8389-781a1319c369
+
+
 
 | SCRIPT              | DESCRIPTION                   |
 | ------------------- | ----------------------------- |
