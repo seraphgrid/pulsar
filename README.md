@@ -1,6 +1,12 @@
 # Pulsar
 🚀 PULSAR - Scripts To Open Files, Manpages And More.
 
+
+
+https://github.com/user-attachments/assets/bf330a6d-5ab9-46c6-8389-781a1319c369
+
+
+
 | SCRIPT              | DESCRIPTION                   |
 | ------------------- | ----------------------------- |
 | pulsar-files        | Script is customisible through config files (most script are created using this). |
