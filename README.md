@@ -51,6 +51,7 @@ I am born dyslexic and mentally ill, it took a lot of effort to make this projec
 - `xclip` for `xclip-file-copy` script (optional).
 - `xdotool` for `xdotool-type-file` script (optional).
 - `sxhkd` for keybindings (optional).
+- `make` for installation. (important)
 
 # Development
 
