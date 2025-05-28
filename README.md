@@ -28,7 +28,7 @@ https://github.com/user-attachments/assets/bf330a6d-5ab9-46c6-8389-781a1319c369
 
 # Support.
 
-I am born dyslexic and mentally ill, it took a lot of effort to make this project.  
+I am born dyslexic and mentally ill, it took a lot of effort to make this project.
 
 - The future changes can break your config.
 - Scirpts that start's with `t` can be opened using terminal.
@@ -36,43 +36,13 @@ I am born dyslexic and mentally ill, it took a lot of effort to make this projec
 
 # Installation
 
-Copy the configs for scripts to .config folder.
+Install configs: `make install-configs`
+Install scripts: `sudo make install-scripts`
 
-```bash
-cp -r configs $HOME/.config/pulsar
-```
+# Uninstallation
 
-Link all pulsar scripts to path using command.
-```bash
-sudo ln -sr scripts/pulsar-scripts/pulsar-* /usr/local/bin/
-```
-
-Link all tpulsar scripts to path using command
-```bash
-sudo ln -sr scripts/tpulsar-scripts/tpulsar-* /usr/local/bin/
-```
-
-Link `xclip-file-copy` script (used in `pulsar-notes`) to path using command.
-```bash
-sudo ln -sr scripts/xclip-file-copy /usr/local/bin/
-```
-
-Link `xdotool-type-file` script (used in `pulsar-notes`) to path using command.
-```bash
-sudo ln -sr scripts/xdotool-type-file /usr/local/bin/
-```
-
-Link `xclip-copy` script (used in global openers) to path using command.
-```bash
-sudo ln -sr scripts/xclip-copy /usr/local/bin/
-```
-
-After installation, start sxhkd using command.
-```bash
-sxhkd -c your_existing_sxhkdrc -c $HOME/.config/pulsar/pulsar-sxhkdrc
-```
-
-**Customize the config files according to your needs (important!)**
+Uninstall configs: `make uninstall-configs`
+Uninstall scripts: `sudo make uninstall-scripts`
 
 # Requirements
 
@@ -96,6 +66,7 @@ sxhkd -c your_existing_sxhkdrc -c $HOME/.config/pulsar/pulsar-sxhkdrc
 - [X] Option to disable hidden files.
 - [X] Script to list and open manpages.
 - [X] Prompt to show templates of code.
+- [X] Makefile for install and uninstall
 - [X] Script to that holds list of keybindings.
 - [X] Script to search using specific search engine.
 - [X] Script that takes file with list and open's the specific list item.

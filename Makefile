@@ -5,7 +5,7 @@
 # ██║ ╚═╝ ██║██║  ██║██║  ██╗███████╗
 # ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
 
-.PHONY: install uninstall help
+.PHONY: install-configs install-scripts uninstall-configs uninstall-scripts help
 
 # Color definitions
 RESET := $(shell tput sgr0)
@@ -15,15 +15,22 @@ YELLOW := $(shell tput setaf 3)
 
 # Help target
 help:
-	@echo "${YELLOW}make help${RESET} - Show this help."
-	@echo "${YELLOW}make install${RESET} - Install the application."
-	@echo "${YELLOW}make uninstall${RESET} - Uninstall the application."
 
-# Install target
-install:
+	@echo "${YELLOW}make help${RESET} - Show this help."
+	@echo "${YELLOW}make install-scripts${RESET} - Install the scripts."
+	@echo "${YELLOW}make install-configs${RESET} - Install the configs."
+	@echo "${YELLOW}make uninstall-scripts${RESET} - Uninstall the scripts."
+	@echo "${YELLOW}make uninstall-configs${RESET} - Uninstall the configs."
+
+# Install configs target
+install-configs:
+
 	@echo "\n${GREEN}INSTALLING SCRIPTS: ${RESET}"
 	mkdir -p ~/.config/pulsar
 	cp -rf configs/* ~/.config/pulsar/
+
+# Install scripts target
+install-scripts:
 
 	@echo "\n${GREEN}LINKING PULSAR SCRIPTS: ${RESET}"
 	mkdir -p /usr/local/bin
@@ -33,13 +40,17 @@ install:
 	mkdir -p /usr/local/bin
 	sudo ln -srf scripts/tpulsar-scripts/tpulsar-* /usr/local/bin/
 
-# Uninstall target
-uninstall:
+# Uninstall configs target
+uninstall-configs:
+
 	@echo "\n${RED}REMOVING CONFIG FILES: ${RESET}"
-	rm -rfi ~/.config/pulsar
+	rm -rfI ~/.config/pulsar
+
+# Uninstall scripts target
+uninstall-scripts:
 
 	@echo "\n${RED}REMOVING PULSAR SCRIPTS: ${RESET}"
-	rm -i /usr/local/bin/pulsar-*
+	rm -I /usr/local/bin/pulsar-*
 
 	@echo "\n${RED}REMOVING TPULSAR SCRIPTS: ${RESET}"
-	rm -i /usr/local/bin/tpulsar-*
+	rm -I /usr/local/bin/tpulsar-*
