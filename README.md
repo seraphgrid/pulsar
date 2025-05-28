@@ -36,13 +36,13 @@ I am born dyslexic and mentally ill, it took a lot of effort to make this projec
 
 # Installation
 
-Install configs: `make install-configs`
-Install scripts: `sudo make install-scripts`
+- Install configs: `make install-configs`
+- Install scripts: `sudo make install-scripts`
 
 # Uninstallation
 
-Uninstall configs: `make uninstall-configs`
-Uninstall scripts: `sudo make uninstall-scripts`
+- Uninstall configs: `make uninstall-configs`
+- Uninstall scripts: `sudo make uninstall-scripts`
 
 # Requirements
 
