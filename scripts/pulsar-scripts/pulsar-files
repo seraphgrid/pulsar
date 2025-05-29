@@ -1,6 +1,6 @@
 #! /bin/sh
 
-# ██████╗ ██╗   ██╗██╗     ███████╗ █████╗ ██████╗ 
+# ██████╗ ██╗   ██╗██╗     ███████╗ █████╗ ██████╗
 # ██╔══██╗██║   ██║██║     ██╔════╝██╔══██╗██╔══██╗
 # ██████╔╝██║   ██║██║     ███████╗███████║██████╔╝
 # ██╔═══╝ ██║   ██║██║     ╚════██║██╔══██║██╔══██╗
@@ -61,6 +61,7 @@ if [ "$PULSAR_SHOW_HIDDEN" = "true" ]; then
     # Show the prompt for files (show-hidden)
     PULSAR_FILE="$( find . $PULSAR_FIND_OPTS | \
                            sed 's/.\///' | \
+                           sort $PULSAR_SORT_OPTS | \
                            $PULSAR_PROMPT $PULSAR_PROMPT_OPTS )"
 
 elif [ "$PULSAR_SHOW_HIDDEN" = "false" ]; then
@@ -68,6 +69,7 @@ elif [ "$PULSAR_SHOW_HIDDEN" = "false" ]; then
     # Show the prompt for files (hide-hidden)
     PULSAR_FILE="$( find -not -path '*/.*' $PULSAR_FIND_OPTS | \
                                            sed 's/.\///' | \
+                                           sort $PULSAR_SORT_OPTS | \
                                            $PULSAR_PROMPT $PULSAR_PROMPT_OPTS )"
 fi
 
