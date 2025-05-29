@@ -50,7 +50,11 @@ I am born dyslexic and mentally ill, it took a lot of effort to make this projec
 
 - Start sxhkd using command after installation.
 
-`sxhkd -c ~/.config/sxhkd/sxhkdrc -c ~/.config/pulsar/pulsar-sxhkdrc`
+`sxhkd -c ~/.config/pulsar/pulsar-sxhkdrc`
+
+- If you want to include your existing configs.
+
+`sxhkd -c your-existing-config -c ~/.config/pulsar/pulsar-sxhkdrc`
 
 # Requirements
 
