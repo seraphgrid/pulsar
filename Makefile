@@ -53,14 +53,16 @@ install-configs:
 #
 
 install-scripts:
+	mkdir -p /usr/local/bin
 
 	@echo "\n${GREEN}LINKING PULSAR SCRIPTS: ${RESET}"
-	mkdir -p /usr/local/bin
 	sudo ln -srf scripts/pulsar-scripts/pulsar-* /usr/local/bin/
 
 	@echo "\n${GREEN}LINKING TPULSAR SCRIPTS: ${RESET}"
-	mkdir -p /usr/local/bin
 	sudo ln -srf scripts/tpulsar-scripts/tpulsar-* /usr/local/bin/
+
+	@echo "\n${GREEN}LINKING EXTRA SCRIPTS: ${RESET}"
+	sudo ln -srf scripts/x* /usr/local/bin/
 
 # _   _      ___ ___  _  _ ___ ___ ___ ___
 #| | | |___ / __/ _ \| \| | __|_ _/ __/ __|
