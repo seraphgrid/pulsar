@@ -1,0 +1,74 @@
+#! /bin/sh
+
+# ██████╗ ██╗   ██╗██╗     ███████╗ █████╗ ██████╗
+# ██╔══██╗██║   ██║██║     ██╔════╝██╔══██╗██╔══██╗
+# ██████╔╝██║   ██║██║     ███████╗███████║██████╔╝
+# ██╔═══╝ ██║   ██║██║     ╚════██║██╔══██║██╔══██╗
+# ██║     ╚██████╔╝███████╗███████║██║  ██║██║  ██║
+# ╚═╝      ╚═════╝ ╚══════╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝
+
+# Exit the script on error
+set -e
+
+# Function to show logo
+pulsar_show_logo() {
+    tput setaf 4
+    echo "                                     "
+    echo " ███████╗██╗██╗     ███████╗███████╗ "
+    echo " ██╔════╝██║██║     ██╔════╝██╔════╝ "
+    echo " █████╗  ██║██║     █████╗  ███████╗  PULSAR-TERMRUN "
+    echo " ██╔══╝  ██║██║     ██╔══╝  ╚════██║ "
+    echo " ██║     ██║███████╗███████╗███████║ "
+    echo " ╚═╝     ╚═╝╚══════╝╚══════╝╚══════╝ "
+    echo "                                     "
+    tput sgr0
+}
+
+# Function to show help
+pulsar_show_help() {
+
+    # Show the logo in help
+    pulsar_show_logo
+
+    # Show to colored help
+    RESET="$(tput sgr0)"
+    BLUE="$(tput bold && tput setaf 4)"
+    echo "${BLUE}pulsar-termrun:${RESET} [-c, --config config_file]\n"
+
+    # Exit after showing help
+    exit 1
+}
+
+# Load the default configs for script
+. "$HOME/.config/pulsar/pulsar-configs/pulsar.conf"
+. "$HOME/.config/pulsar/pulsar-configs/pulsar-termrun.conf"
+
+# Parse the user arguments
+while [ $# -gt 0 ]; do
+
+    case $1 in
+        -c|--config) shift && . "$1";;
+        -p|--pause) PULSAR_PAUSE="true" && echo "paused";;
+        *) pulsar_show_help;;
+    esac
+
+    shift
+done
+
+# Show the prompt for commands
+PULSAR_CMD="$( dmenu_path | $PULSAR_PROMPT \
+                            $PULSAR_PROMPT_OPENER_OPTS )"
+
+[ -z "$PULSAR_CMD" ] && exit 1
+
+# Run file using opener
+if [ -z "$PULSAR_DETCH" ]; then
+    $PULSAR_CMD
+else
+    if [ "$PULSAR_PAUSE" = "false" ]; then
+        $PULSAR_TERM sh -c "$PULSAR_CMD" &> /dev/null &
+
+    elif [ "$PULSAR_PAUSE" = "true" ]; then
+        $PULSAR_TERM sh -c "$PULSAR_CMD; read -p ':' PROMPT" &> /dev/null &
+    fi
+fi

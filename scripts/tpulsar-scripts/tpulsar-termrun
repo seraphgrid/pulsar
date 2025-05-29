@@ -1,0 +1,4 @@
+#! /bin/sh
+
+pulsar-termrun -c ~/.config/pulsar/tpulsar-configs/tpulsar.conf \
+               -c ~/.config/pulsar/tpulsar-configs/tpulsar-termrun.conf $@

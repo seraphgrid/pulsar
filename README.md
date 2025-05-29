@@ -25,6 +25,7 @@ https://github.com/user-attachments/assets/bf330a6d-5ab9-46c6-8389-781a1319c369
 | pulsar-keybindings  | Quickly see keybindings for apps. |
 | pulsar-webbookmarks | Open the selected in you favourite browser. |
 | pulsar-notes        | Copy or edit text content of the selected note. (usefull for snippets and templates) |
+| pulsar-termrun      | Run commands in terminal or sub-terminal |
 
 # Support.
 
@@ -55,8 +56,8 @@ I am born dyslexic and mentally ill, it took a lot of effort to make this projec
 
 # Development
 
-- Editor should be vscode (word-wrap disabled and tab -> 4 spaces).
-- Recommended vscode extension is `ANSI Decorator`.
+- Editor should be vscode or geany (word-wrap disabled and tab -> 4 spaces).
+- Recommended vscode extension is `ANSI Decorator` or `figlet` command.
 - If you have dyslexia then font `Cascadia Code` and high contrast dark theme will help (Github-Dark-Default is nice).
 
 # Todos (complete)
