@@ -26,6 +26,7 @@ https://github.com/user-attachments/assets/bf330a6d-5ab9-46c6-8389-781a1319c369
 | pulsar-webbookmarks | Open the selected in you favourite browser. |
 | pulsar-notes        | Copy or edit text content of the selected note. (usefull for snippets and templates) |
 | pulsar-termrun      | Run commands in terminal or sub-terminal |
+| pulsar-cmdbookmarks | Run commonly used commands quickly |
 
 # Support.
 
@@ -96,4 +97,4 @@ alias twbook="tpulsar-webbookmarks"
 - [ ] Font icons support.
 - [ ] Script to randomly select from directory.
 - [ ] Prompt that lists the installed packages.
-- [ ] Menu that holds commonly used commands (`shutdown`, `reboot`).
+- [X] Menu that holds commonly used commands (`shutdown`, `reboot`).
