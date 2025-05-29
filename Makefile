@@ -89,6 +89,11 @@ uninstall-scripts:
 	@echo "\n${RED}REMOVING TPULSAR SCRIPTS: ${RESET}"
 	rm -I /usr/local/bin/tpulsar-*
 
+	@echo "\n${RED}REMOVING EXTRA SCRIPTS: ${RESET}"
+	rm -I /usr/local/bin/xclip-copy
+	rm -I /usr/local/bin/xclip-file-copy
+	rm -I /usr/local/bin/xdotool-type-file
+
 #   _____ ___ ___ _____    ___ _   _ _    ___   _   ___ 
 #  |_   _| __/ __|_   _|__| _ \ | | | |  / __| /_\ | _ \
 #    | | | _|\__ \ | ||___|  _/ |_| | |__\__ \/ _ \|   /
