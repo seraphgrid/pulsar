@@ -45,6 +45,10 @@ I am born dyslexic and mentally ill, it took a lot of effort to make this projec
 - Uninstall configs: `make uninstall-configs`
 - Uninstall scripts: `sudo make uninstall-scripts`
 
+# Keybindings
+
+- Start sxhkd using command `sxhkd -c ~/.config/sxhkd/sxhkdrc -c ~/.config/pulsar/pulsar-sxhkdrc` after installation.
+
 # Requirements
 
 - `fzf` for tpulsar scripts (can be changed in `tpulsar.conf`).

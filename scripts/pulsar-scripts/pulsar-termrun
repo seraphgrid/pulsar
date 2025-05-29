@@ -48,7 +48,7 @@ while [ $# -gt 0 ]; do
 
     case $1 in
         -c|--config) shift && . "$1";;
-        -p|--pause) PULSAR_PAUSE="true" && echo "paused";;
+        -p|--pause) PULSAR_PAUSE="true";;
         *) pulsar_show_help;;
     esac
 
@@ -57,7 +57,7 @@ done
 
 # Show the prompt for commands
 PULSAR_CMD="$( dmenu_path | $PULSAR_PROMPT \
-                            $PULSAR_PROMPT_OPENER_OPTS )"
+                            $PULSAR_PROMPT_OPTS )"
 
 [ -z "$PULSAR_CMD" ] && exit 1
 
