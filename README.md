@@ -48,7 +48,9 @@ I am born dyslexic and mentally ill, it took a lot of effort to make this projec
 
 # Keybindings
 
-- Start sxhkd using command `sxhkd -c ~/.config/sxhkd/sxhkdrc -c ~/.config/pulsar/pulsar-sxhkdrc` after installation.
+- Start sxhkd using command after installation.
+
+`sxhkd -c ~/.config/sxhkd/sxhkdrc -c ~/.config/pulsar/pulsar-sxhkdrc`
 
 # Requirements
 
