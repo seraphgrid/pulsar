@@ -96,6 +96,7 @@ alias twbook="tpulsar-webbookmarks"
 - [X] Makefile for install and uninstall
 - [X] Script to that holds list of keybindings.
 - [X] Script to search using specific search engine.
+- [X] Menu that holds commonly used commands (`shutdown`, `reboot`).
 - [X] Script that takes file with list and open's the specific list item.
 
 # Todos (incomplete)
@@ -103,4 +104,3 @@ alias twbook="tpulsar-webbookmarks"
 - [ ] Font icons support.
 - [ ] Script to randomly select from directory.
 - [ ] Prompt that lists the installed packages.
-- [X] Menu that holds commonly used commands (`shutdown`, `reboot`).
