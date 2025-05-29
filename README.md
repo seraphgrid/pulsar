@@ -20,7 +20,7 @@ https://github.com/user-attachments/assets/bf330a6d-5ab9-46c6-8389-781a1319c369
 | pulsar-wallpapers   | Set or view wallpaper quickly. |
 | pulsar-xresources   | Parse the selected xresources file (can be usefull when changing theme of awesomewm, terminal or others). |
 | pulsar-manpages     | View manpages without using terminal. |
-| pulsar-list         | Helper script to make other script work (like pulsar-files). |
+| pulsar-list         | Helper script to make other script work (like pulsar-websearch). |
 | pulsar-websearch    | Search using selected search engine url. |
 | pulsar-keybindings  | Quickly see keybindings for apps. |
 | pulsar-webbookmarks | Open the selected in you favourite browser. |
