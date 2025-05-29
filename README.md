@@ -64,6 +64,20 @@ I am born dyslexic and mentally ill, it took a lot of effort to make this projec
 - Recommended vscode extension is `ANSI Decorator` or `figlet` command.
 - If you have dyslexia then font `Cascadia Code` and high contrast dark theme will help (Github-Dark-Default is nice).
 
+# Aliases
+
+Here are some aliases for tpulsar scripts.
+
+```bash
+alias tvid="tpulsar-videos"
+alias trun="tpulsar-termrun"
+alias tman="tpulsar-manpages"
+alias twal="tpulsar-wallpaper"
+alias twsearch="tpulsar-search"
+alias txres="tpulsar-xresources"
+alias twbook="tpulsar-webbookmarks"
+```
+
 # Todos (complete)
 
 - [X] Sxhkd keybindings.
