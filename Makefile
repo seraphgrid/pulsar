@@ -42,7 +42,7 @@ help:
 
 install-configs:
 
-	@echo "${GREEN}INSTALLING SCRIPTS: ${RESET}"
+	@echo "${GREEN}INSTALLING CONFIGS: ${RESET}\n"
 	mkdir -p ~/.config/pulsar
 	cp -rf configs/* ~/.config/pulsar/
 
@@ -55,13 +55,13 @@ install-configs:
 install-scripts:
 	mkdir -p /usr/local/bin
 
-	@echo "${GREEN}LINKING PULSAR SCRIPTS: ${RESET}"
+	@echo "${GREEN}LINKING PULSAR SCRIPTS: ${RESET}\n"
 	sudo ln -srf scripts/pulsar-scripts/pulsar-* /usr/local/bin/
 
-	@echo "\n${GREEN}LINKING TPULSAR SCRIPTS: ${RESET}"
+	@echo "\n${GREEN}LINKING TPULSAR SCRIPTS: ${RESET}\n"
 	sudo ln -srf scripts/tpulsar-scripts/tpulsar-* /usr/local/bin/
 
-	@echo "\n${GREEN}LINKING EXTRA SCRIPTS: ${RESET}"
+	@echo "\n${GREEN}LINKING EXTRA SCRIPTS: ${RESET}\n"
 	sudo ln -srf scripts/x* /usr/local/bin/
 
 # _   _      ___ ___  _  _ ___ ___ ___ ___
@@ -72,7 +72,7 @@ install-scripts:
 
 uninstall-configs:
 
-	@echo "${RED}REMOVING CONFIG FILES: ${RESET}"
+	@echo "${RED}REMOVING CONFIG FILES: ${RESET}\n"
 	rm -rfI ~/.config/pulsar
 
 #  _   _     ___  ___ ___ ___ ___ _____ ___
@@ -83,13 +83,13 @@ uninstall-configs:
 
 uninstall-scripts:
 
-	@echo "${RED}REMOVING PULSAR SCRIPTS: ${RESET}"
+	@echo "${RED}REMOVING PULSAR SCRIPTS: ${RESET}\n"
 	rm -I /usr/local/bin/pulsar-*
 
-	@echo "\n${RED}REMOVING TPULSAR SCRIPTS: ${RESET}"
+	@echo "\n${RED}REMOVING TPULSAR SCRIPTS: ${RESET}\n"
 	rm -I /usr/local/bin/tpulsar-*
 
-	@echo "\n${RED}REMOVING EXTRA SCRIPTS: ${RESET}"
+	@echo "\n${RED}REMOVING EXTRA SCRIPTS: ${RESET}\n"
 	rm -I /usr/local/bin/xclip-copy
 	rm -I /usr/local/bin/xclip-file-copy
 	rm -I /usr/local/bin/xdotool-type-file
