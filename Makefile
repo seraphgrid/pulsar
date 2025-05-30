@@ -53,6 +53,8 @@ install-configs:
 #
 
 install-scripts:
+
+	@echo "${GREEN}CREATING LOCAL BIN DIRECTORY: ${RESET}\n"
 	mkdir -p /usr/local/bin
 
 	@echo "${GREEN}LINKING PULSAR SCRIPTS: ${RESET}\n"
