@@ -42,7 +42,7 @@ help:
 
 install-configs:
 
-	@echo "\n${GREEN}INSTALLING SCRIPTS: ${RESET}"
+	@echo "${GREEN}INSTALLING SCRIPTS: ${RESET}"
 	mkdir -p ~/.config/pulsar
 	cp -rf configs/* ~/.config/pulsar/
 
@@ -55,7 +55,7 @@ install-configs:
 install-scripts:
 	mkdir -p /usr/local/bin
 
-	@echo "\n${GREEN}LINKING PULSAR SCRIPTS: ${RESET}"
+	@echo "${GREEN}LINKING PULSAR SCRIPTS: ${RESET}"
 	sudo ln -srf scripts/pulsar-scripts/pulsar-* /usr/local/bin/
 
 	@echo "\n${GREEN}LINKING TPULSAR SCRIPTS: ${RESET}"
@@ -72,7 +72,7 @@ install-scripts:
 
 uninstall-configs:
 
-	@echo "\n${RED}REMOVING CONFIG FILES: ${RESET}"
+	@echo "${RED}REMOVING CONFIG FILES: ${RESET}"
 	rm -rfI ~/.config/pulsar
 
 #  _   _     ___  ___ ___ ___ ___ _____ ___
@@ -83,7 +83,7 @@ uninstall-configs:
 
 uninstall-scripts:
 
-	@echo "\n${RED}REMOVING PULSAR SCRIPTS: ${RESET}"
+	@echo "${RED}REMOVING PULSAR SCRIPTS: ${RESET}"
 	rm -I /usr/local/bin/pulsar-*
 
 	@echo "\n${RED}REMOVING TPULSAR SCRIPTS: ${RESET}"
