@@ -57,7 +57,7 @@ install-scripts:
 	@echo "${GREEN}CREATING LOCAL BIN DIRECTORY: ${RESET}\n"
 	mkdir -p /usr/local/bin
 
-	@echo "${GREEN}LINKING PULSAR SCRIPTS: ${RESET}\n"
+	@echo "\n${GREEN}LINKING PULSAR SCRIPTS: ${RESET}\n"
 	ln -srf scripts/pulsar-scripts/pulsar-* /usr/local/bin/
 
 	@echo "\n${GREEN}LINKING TPULSAR SCRIPTS: ${RESET}\n"
