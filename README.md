@@ -93,7 +93,7 @@ alias twbook="tpulsar-webbookmarks"
 - [X] Option to disable hidden files.
 - [X] Script to list and open manpages.
 - [X] Prompt to show templates of code.
-- [X] Makefile for install and uninstall
+- [X] Makefile for install and uninstall (will use for widow.)
 - [X] Script to that holds list of keybindings.
 - [X] Script to search using specific search engine.
 - [X] Menu that holds commonly used commands (`shutdown`, `reboot`).
